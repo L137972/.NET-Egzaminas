@@ -31,7 +31,7 @@ namespace RestaurantSystem
         public void CreateReceipt(Order order, Table table)
         {
             OrderId++;
-            string content = "Order Date: " + Date.ToString() + " Table number: " + table.TableNumber + "Number of Seats at tabke: " + table.TableCapacity + "\nOrdered Items: \n";
+            string content = "Order Date: " + Date.ToString() + " Table number: " + table.TableNumber + "Number of Seats at table: " + table.TableCapacity + "\nOrdered Items: \n";
             foreach(OrderItem item in OrderItems)
             {
                 content += item.ToString() + "\n";
